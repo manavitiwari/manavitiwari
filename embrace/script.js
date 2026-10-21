@@ -10,9 +10,15 @@ document.querySelectorAll('#site-nav a').forEach(link => link.addEventListener('
   menuToggle.setAttribute('aria-expanded', 'false');
   menuToggle.setAttribute('aria-label', 'Open menu');
 }));
-document.querySelector('#newsletter-form').addEventListener('submit', event => {
+const dateInput = document.querySelector('#appointment-date');
+const today = new Date();
+dateInput.min = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+document.querySelector('#booking-form').addEventListener('submit', event => {
   event.preventDefault();
   const form = event.currentTarget;
-  form.querySelector('.form-note').textContent = 'Thank you for being here. A little note will find its way to you soon.';
+  const name = new FormData(form).get('name').trim();
+  const message = form.querySelector('.form-note');
+  message.textContent = `Thanks, ${name}. This is a preview request and has not been sent to Embrace yet.`;
+  message.classList.add('is-success');
   form.reset();
 });
