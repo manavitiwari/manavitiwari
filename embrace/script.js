@@ -22,3 +22,11 @@ document.querySelector('#booking-form').addEventListener('submit', event => {
   message.classList.add('is-success');
   form.reset();
 });
+document.querySelectorAll('[data-book-service]').forEach(button => {
+  button.addEventListener('click', () => {
+    const service = document.querySelector('#service');
+    service.value = button.dataset.bookService;
+    document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
+    window.setTimeout(() => document.querySelector('#customer-name').focus({ preventScroll: true }), 450);
+  });
+});
