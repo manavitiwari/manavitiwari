@@ -1,10 +1,15 @@
-- 👋 Hi, I’m Manavitiwari
-- 👀 I’m interested in web development.
-- 🌱 I’m currently learning to manage my time.
-- 💞️ I’m looking to collaborate on any idea that impresses me.
-- 📫 fun fact: I love to draw and play guitar.
+# Hi, I’m Manavi Tiwari 👋
 
-<!---
-manavitiwari/manavitiwari is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I’m interested in web development, learning as I build, and collaborating on creative ideas. Outside of coding, I enjoy drawing and playing guitar.
+
+## Projects
+
+### Samridhi Glamour — Bridal Beauty & Mehendi
+
+A responsive website for a bridal beauty studio, featuring makeup and mehendi services, hair care, beauty courses, lehenga styling, and appointment enquiries.
+
+**Project files:** [Website](index.html) · [Main styles](style.css) · [Section styles](sections.css) · [Interactions](script.js)
+
+---
+
+This is my GitHub profile repository, so this README appears on my profile.
